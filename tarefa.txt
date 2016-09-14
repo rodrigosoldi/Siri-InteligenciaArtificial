@@ -1,0 +1,17 @@
+Em grupo de entre 4 (quatro) a 5 ( cinco )alunos,
+escreva um texto de 4 a 6 páginas completas descrevendo uma aplicação
+concreta de Inteligência Artificial.
+Foque em uma única aplicação, e não em teoria.
+A aplicação deve estar pelo menos no estágio de
+testes avançados (p. ex.: o carro autônomo do Google).
+
+No seu texto discuta ao menos os seguintes aspectos.
+i) Qual o problema resolvido?
+ii) Por que se usou uma técnica de IA?
+iii) Qual técnica foi usada? Explique em detalhe.
+iv) Quais os principais êxitos e dificuldades encontradas no desenvolvimento do projeto?
+
+Cite todas as referências utilizadas no trabalho, inclusive a
+fonte primária consultada sobre a aplicação. 
+
+Data de entrega: 18 de setembro.
