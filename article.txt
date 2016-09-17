@@ -17,6 +17,7 @@ Referências:
 . Inteligência Artificial: Norvig & Russel
 . Peter Kiefer: Mobile Intention Recognition - https://books.google.com.br/books?id=RBoA_7kogfIC&pg=PA7&lpg=PA7&dq=nlp+artificial+intelligence+intention&source=bl&ots=PXFM34z5zv&sig=CB_Fp2bRgYrIZCf-f85q4pBQJmo&hl=pt-BR&sa=X&ved=0ahUKEwj4wrWWg5fPAhXFG5AKHa4VD5YQ6AEIbjAJ#v=onepage&q=nlp%20artificial%20intelligence%20intention&f=false
 . The Ahn Han & Luiz Moniz Pereira: Intention-based Decision Making via Intention Recognition and its Applications - http://centria.di.fct.unl.pt/~lmp/publications/online-papers/behavior_recognition.pdf
+. Linguística Geral: Saussure
 
 
 ----------------------------------
@@ -38,6 +39,20 @@ De modo geral, o objetivo da Siri é funcionar como uma assistente do usuário d
 Utilizando a Siri, o usuário é capaz de acessar fotos e vídeos, consultar e-mails, enviar mensagens, fazer chamadas, comparar moedas, consultar a previsão de tempo e a situação da bolsa de valores, pesquisar por aplicativos, músicas e filmes, ajustar o alarme e fazer pesquisas na internet, entre muitas outras funções [rodapé: A partir do iOS 10, será possível utilizar a Siri para realizar tarefas em aplicativos que não sejam desenvolvidos pela apple.]
 
 A Siri, portanto, deve ser capaz de entender qual é a intenção do usuário; interagir com as diversas aplicações de modo a realizar a ação esperada; e apresentar os resultados da ação realizada de volta para o usuário.
+
+***
+
+São necessárias diferentes técnicas de Inteligência Artificial para o funcionamento de um sistema como a Siri.
+
+Em primeiro lugar, a IA é necessária para permitir que uma cadeia de áudio seja interpretada e transformada em uma cadeia de caracteres. Esse é um processo semelhante ao realizado por humanos quando interpretam uma cadeia sonora como uma sequência de fonemas discretos. Esse processamento, embora seja realizado de maneira natural por crianças muito novas, não é nada trivial. É importante ressaltar que a cadeia sonora que será interpretada não possui nenhuma marcação a respeito de onde termina um determinado fonema e onde começa o próximo [citar Saussure]. Além disso, o sinal sonoro, de modo geral, contém uma quantidade razoável de ruído, que deve ser filtrado para não interferir na interpretação da cadeia fonêmica.
+
+Além do desafio do reconhecimento de voz, a IA é fundamental para a análise do texto gerado pela fase anterior de análise. O sistema precisa reconhecer os diversos itens lexicais e, em muitos casos, escolher um dos possíveis significados diferentes para cada palavra e identificar a sua função morfológica. Após essa análise lexical e morfológica, é preciso determinar (em algumas abordagens mais estritamente, em outras menos) qual é a estrutura sintática das sentenças reconhecidas, de modo que seja possível associar a cada verbo o seu complemento e os adjuntos relevantes (por exemplo: enviar[Verbo] uma mensagem[Complemento - objeto direto] para o João[Complemento - objeto indireto]). Existem diversas abordagens diferentes para a resolução desses problemas[citar J&M] e todas elas exigem alguma forma de representação do conhecimento, algum processo de aprendizagem ou alguma escolha baseada em probabilidade, que são diferentes métodos de IA.
+
+Por último, o sistema também deve ser capaz de decidir qual é a intenção do usuário com base nas informações que as análises anteriores geraram[citar Kiefer]. A ideia é que a partir do texto analisado a Siri seja capaz de tomar uma decisão a respeito do que fazer, ou seja, com quais aplicações ela deve interagir, quais parâmetros devem ser passados e quando essa ação deve ser tomada. Esse tipo de decisão está relacionada à área de Resolução de Intenção[citar Kiefer e Ahn Ham]. Existem infinitas maneiras de expressar uma mesma intenção e, por outro lado, formas muito parecidas de expressar intenções bastante diferentes. O sistema, portanto, deve ser capaz de decidir qual é a real intenção do usuário e executar a ação relacionada a essa intenção.
+
+Todas essas diferentes etapas do funcionamento da Siri mostram quão importante é o uso de algum tipo de Inteligência Artificial para o funcionamento de um sistema de interface de voz. 
+
+***
 
 
 
