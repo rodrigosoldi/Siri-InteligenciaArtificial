@@ -23,7 +23,7 @@ Referências:
 
 Introdução:
 
-A Inteligência Artificial tem se tornado cada vez mais presente na vida cotidiana. A Siri, da Apple, é um exemplo da integração de diversas áreas da Inteligência Artificial com o dia-a-dia dos usuários. A Siri é o sistema responsável pela interface do voz para usuários de iPhone, iPad e Apple Watch; é também o sistema responsável pelas sugestões de aplicativos, restaurantes e lugares interessantes para o usuário em determinada localização e hora do dia; entre outras utilidades que de modo geral, tendem a "aprender" a respeito do usuário ao longo do uso de modo que seja possível auxiliá-lo de forma mais proativa.[citação: Apple]
+A Inteligência Artificial tem se tornado cada vez mais presente na vida cotidiana. A Siri, da Apple, é um exemplo da integração de diversas áreas da Inteligência Artificial com o dia-a-dia dos usuários. A Siri é o sistema responsável pela interface do voz para usuários de iPhone, iPad e Apple Watch[rodapé: A partir do próximo macOS - Sierra - será possível utilizar a Siri também a partir de MacBooks e iMacs.]; é também o sistema responsável pelas sugestões de aplicativos, restaurantes e lugares interessantes para o usuário em determinada localização e hora do dia; entre outras utilidades que de modo geral, tendem a "aprender" a respeito do usuário ao longo do uso de modo que seja possível auxiliá-lo de forma mais proativa.[citação: Apple]
 
 Para o funcionamento de um sistema como a Siri, são necessárias diversas técnicas em diferentes subáreas da Inteligência Artificial e do Aprendizado de Máquina.[citar: Apple] Em primeiro lugar, o sistema deve ser capaz de reconhecer o que está sendo dito (speech recognition[citar J&M]), transformando uma gravação de áudio em uma cadeia de texto; a seguir, o texto assim reconhecido deve ser processado (tokenization, tagging, parsing, semantic analysis[citar J&M]) de modo que seja possível reconhecer elementos lexicais que contenham alguma informação semântica; uma vez que essas informações estejam disponíveis, é preciso definir qual é a intenção do usuário (intention recognition[citar Kiefer]) e, a partir da intenção identificada, realizar alguma ação (enviar uma mensagem, pesquisar algo na internet, desligar algum aparelho, alterar alguma configuração, etc.); em alguns casos, é preciso ainda formular os resultados da ação realizada em linguagem natural, o que inclui o processamento léxico, morfológico e sintático e a geração de áudio a partir do texto formulado (text to speech[citar J&M]).
 
@@ -31,7 +31,13 @@ O objetivo de um sistema assim é permitir que ele realize uma tarefa que até e
 
 O objetivo do presente trabalho é fazer uma breve análise sobre algumas das áreas e métodos envolvidos no funcionamento da Siri e de sistemas semelhantes.
 
+***
 
+De modo geral, o objetivo da Siri é funcionar como uma assistente do usuário de iPhone ou iPad, permitindo que o usuário interaja com as diversas aplicações de maneira fluida e simples, utilizando somente a voz como interface. Desde muito cedo, a Apple tem se preocupado em facilitar a interação dos usuários com os seus sistemas, de modo que os usuários possam focar sua antenção no objetivo final do que desejam realizar e não tentando descobrir como realizar uma determinada tarefa. Como exemplos dessa preocupação estão o mouse como interface para o Mac, o click wheel para o iPod e o multi touch para o iPhone e iPad [citar apple]. A Siri é mais uma tentativa de simplificar a interface do usuário com o sistema, de maneira que seja possível realizar mais gastando menos esforço com a interface.
+
+Utilizando a Siri, o usuário é capaz de acessar fotos e vídeos, consultar e-mails, enviar mensagens, fazer chamadas, comparar moedas, consultar a previsão de tempo e a situação da bolsa de valores, pesquisar por aplicativos, músicas e filmes, ajustar o alarme e fazer pesquisas na internet, entre muitas outras funções [rodapé: A partir do iOS 10, será possível utilizar a Siri para realizar tarefas em aplicativos que não sejam desenvolvidos pela apple.]
+
+A Siri, portanto, deve ser capaz de entender qual é a intenção do usuário; interagir com as diversas aplicações de modo a realizar a ação esperada; e apresentar os resultados da ação realizada de volta para o usuário.
 
 
 
