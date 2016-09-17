@@ -1,0 +1,50 @@
+i) Qual o problema resolvido?
+ii) Por que se usou uma técnica de IA?
+iii) Qual técnica foi usada? Explique em detalhe.
+iv) Quais os principais êxitos e dificuldades encontradas no desenvolvimento do projeto?
+
+----------------------------------
+
+i) Uma assistente com interface de voz
+ii) Por que é necessário reconhecimento de voz, processamento de linguagem
+iii) Speech Recognition, Question Answering, Intent Resolution
+iv) êxitos? Dificuldades: Línguas sem corpora anotados (como o Português Brasileiro)
+
+----------------------------------
+
+Referências:
+
+. Inteligência Artificial: Norvig & Russel
+. Peter Kiefer: Mobile Intention Recognition - https://books.google.com.br/books?id=RBoA_7kogfIC&pg=PA7&lpg=PA7&dq=nlp+artificial+intelligence+intention&source=bl&ots=PXFM34z5zv&sig=CB_Fp2bRgYrIZCf-f85q4pBQJmo&hl=pt-BR&sa=X&ved=0ahUKEwj4wrWWg5fPAhXFG5AKHa4VD5YQ6AEIbjAJ#v=onepage&q=nlp%20artificial%20intelligence%20intention&f=false
+. The Ahn Han & Luiz Moniz Pereira: Intention-based Decision Making via Intention Recognition and its Applications - http://centria.di.fct.unl.pt/~lmp/publications/online-papers/behavior_recognition.pdf
+
+
+----------------------------------
+
+Introdução:
+
+A Inteligência Artificial tem se tornado cada vez mais presente na vida cotidiana. A Siri, da Apple, é um exemplo da integração de diversas áreas da Inteligência Artificial com o dia-a-dia dos usuários. A Siri é o sistema responsável pela interface do voz para usuários de iPhone, iPad e Apple Watch; é também o sistema responsável pelas sugestões de aplicativos, restaurantes e lugares interessantes para o usuário em determinada localização e hora do dia; entre outras utilidades que de modo geral, tendem a "aprender" a respeito do usuário ao longo do uso de modo que seja possível auxiliá-lo de forma mais proativa.[citação: Apple]
+
+Para o funcionamento de um sistema como a Siri, são necessárias diversas técnicas em diferentes subáreas da Inteligência Artificial e do Aprendizado de Máquina.[citar: Apple] Em primeiro lugar, o sistema deve ser capaz de reconhecer o que está sendo dito (speech recognition[citar J&M]), transformando uma gravação de áudio em uma cadeia de texto; a seguir, o texto assim reconhecido deve ser processado (tokenization, tagging, parsing, semantic analysis[citar J&M]) de modo que seja possível reconhecer elementos lexicais que contenham alguma informação semântica; uma vez que essas informações estejam disponíveis, é preciso definir qual é a intenção do usuário (intention recognition[citar Kiefer]) e, a partir da intenção identificada, realizar alguma ação (enviar uma mensagem, pesquisar algo na internet, desligar algum aparelho, alterar alguma configuração, etc.); em alguns casos, é preciso ainda formular os resultados da ação realizada em linguagem natural, o que inclui o processamento léxico, morfológico e sintático e a geração de áudio a partir do texto formulado (text to speech).
+
+O objetivo de um sistema assim é permitir que ele realize uma tarefa que até então seria naturalmente realizada por um humano, ou seja, o sistema tem a função de um agente inteligente. É importante ressaltar que, diferente de outras situações mais voltadas para a pesquisa acadêmica pura, a Siri é um produto que é disponibilizado para os usuários e, por isso, a prioridade é que o sistema seja capaz de obter resultados ótimos ainda que para isso os algoritmos usados sejam claramente diferentes do que se imagina que ocorra na cognição de um humano. Isso é diferente, por exemplo, do trabalho realizado em laboratórios de Ciências Cognitivas ou de Neurociência Computacional em que é dada maior importância à maneira como as computações são realizadas e aos algoritmos subjacentes do que simplesmente ao objetivo de alcançar resultados satisfatórios. Essas duas abordagens são igualmente válidas e representam diferentes pontos de vista a respeito do que significa Inteligência Artificial e, embora tenham propósitos e objetivos distintos, são complementares e tem contribuído mutuamente para o avanço da área. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
