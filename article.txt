@@ -80,7 +80,17 @@ Na primeira abordagem, deve haver uma vasta quantidade de documentos que são an
 
 No segundo paradigma é preciso construir uma representação semântica da pergunta feita. Uma pergunta pode ser representada como uma proposição de Cálculo de Predicados ou uma simples relação entre uma entidade conhecida e uma não conhecida. Qualquer que seja a representação da pergunta, é necessário fazer uma busca em uma base de conhecimento para determinar a resposta.
 
+Conclusão
 
+A Siri é um exemplo de uso de Inteligência Artificial para facilitar a vida cotidiana dos usuários. Como visto neste trabalho, para o funcionamento de um sistema assim é necessário o uso de diferentes técnicas e métodos de IA, especialmente na área de Processamento de Linguagem Natural. 
+
+Para que a Siri funcione em uma determinada língua, é necessário que existam recusos como corpora anotados que deverão ser usados como input para algoritmos baseados em aprendizagem (tais como o HMM usado para a identificação de classes gramaticais, descrito acima). Além disso, é necessário também, especialmente para algoritmos mais baseados em conhecimento e categorias, uma descrição formal satisfatória da língua. Isso é o motivo pelo qual as línguas vão sendo acrescentadas à Siri ao longo dos anos e nem todas as línguas funcionam igualmente bem.
+
+Com o maior uso de aprendizagem não supervisionada, é possível que cada vez seja menor a quantidade de recursos necessários para o funcionamento da Siri em uma nova língua. 
+
+O avanço de sistemas como a Siri mostram não só a relevância da IA, mas também a maneira como ela pode ser usada no dia-a-dia e como sistemas assim podem melhorar e se adaptar aos usuários ao longo do tempo. Além disso, sistemas assim tornam-se um passo adiante no sentido de facilitar a interface humano-computador de modo que a atenção e o esforço dos usuários esteja no seu objetivo final e não nos problemas de interação.
+
+O presente trabalho se ocupou principalmente das questões relacionadas ao processamento de linguagem natural, entretanto, cada vez mais, a Siri está sendo desenvolvida para aprender mais sobre o usuário a partir do uso que ele faz do sistema (iOS, macOS e watchOS), de modo que seja possível, por exemplo, sugerir que aplicativos o usuário mais provavelmente usará em determinado local e hora do dia. Isso é também outro exemplo do uso de IA no dia-a-dia dos usuários que, nesse vaso, vai além do Processamento de Linguagem Natural.
 
 
 
