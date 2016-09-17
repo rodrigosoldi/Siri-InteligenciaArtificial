@@ -7,7 +7,7 @@ iv) Quais os principais êxitos e dificuldades encontradas no desenvolvimento do
 
 i) Uma assistente com interface de voz
 ii) Por que é necessário reconhecimento de voz, processamento de linguagem
-iii) Speech Recognition, Question Answering, Intent Resolution
+iii) Speech Recognition, Part of Speech tagging, Intent Resolution
 iv) êxitos? Dificuldades: Línguas sem corpora anotados (como o Português Brasileiro)
 
 ----------------------------------
@@ -61,6 +61,16 @@ Reconhecimento de Voz
 O primeiro desafio para um sistema como a Siri é interpretar o som gravado e gerar a partir dele um texto que representa o que foi dito. A área da IA que tem se preocupado em resolver problemas desse tipo é a área de Reconhecimento de Voz (Speech Recognition ou Speech-To-Text).
 
 A dificuldade de sistemas de reconhecimento de voz está relacionada, entre outras coisas, à qualidade do sinal sonoro em dois aspectos: em primeiro lugar, o sinal sonoro é poluído com ruídos do ambiente, de modo que os sons relevantes para o reconhecimento estão misturados em meio ao som de carros, ar condicionado, outras pessoas conversando, música, etc. Um outro aspecto em que a qualidade do sinal sonoro é um problema para o reconhecimento de voz é o fato de que em geral uma fala contém uma série de repetições, hesitações, palavras incompletas e palavras que não no léxico conhecido pelo sistema[citar Maas].
+
+Os sistemas de reconhecimento modernos, em geral, utilizam Modelos Ocultos de Markov (HMM) e um léxico de pronúncia que mapeia cada palavra para as suas respectivas formas fonéticas (Saon & Chien 2012). Sistemas mais tradicionais utilizam Modelos de Mistura Gaussiana (GMM) para construir uma forma de mapear de estados subfonéticos para traços de input de áudio. Ao longo dos últimos anos, os GMMs vêm sendo substituídos por Redes Neurais[citar Maas].
+
+Part of Speech Tagging
+
+Um outro nível de análise necessário para o funcionamento de um sistema de interface de voz como a Siri é a classificação de cada token em diferentes classes gramaticais, como verbo, pronome, substantivo (isso pressupõe uma análise prévia onde os diferentes tokens - contendo uma ou mais palavras, ou simplesmente um clítico, como "-me" em "respondeu-me" e "'s" em "John's car" - são identificados).
+
+Existem diferentes algoritmos para a classificação dos itens de uma sentença em classes gramaticais. Alguns sistemas utilizam um Modelo Oculto de Markov (HMM), em que as classes gramaticais de cada token de uma sentença S são definidas com base na probabilidade (i) de uma determinada palavra S(i) dada uma classe gramatical e (ii) na probabilidade de uma determinada classe gramatical na posição i dada a classe gramatical da posição i - 1. Esse método escolhe o conjunto de classes associadas aos tokens que resulta no produtório de maior probabilidade de i até n. Esse algoritmo pressupõe a existência de um corpus de treino que represente um modelo da língua, ou seja, que contenha as devidas probabilidades para cada palavra e classe gramatical. Um corpus assim não pode ser pequeno, uma vez que as probabilidades não estariam bem distribuídas. Além disso, existe sempre a chance de uma palavra no texto a ser analisado não estar presente no corpus, de modo que o sistema deva adotar algum outro critério para decidir que classe gramatical atribuir àquela palavra.
+
+
 
 
 
