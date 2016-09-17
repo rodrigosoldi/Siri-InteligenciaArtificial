@@ -18,7 +18,7 @@ Referências:
 . Peter Kiefer: Mobile Intention Recognition - https://books.google.com.br/books?id=RBoA_7kogfIC&pg=PA7&lpg=PA7&dq=nlp+artificial+intelligence+intention&source=bl&ots=PXFM34z5zv&sig=CB_Fp2bRgYrIZCf-f85q4pBQJmo&hl=pt-BR&sa=X&ved=0ahUKEwj4wrWWg5fPAhXFG5AKHa4VD5YQ6AEIbjAJ#v=onepage&q=nlp%20artificial%20intelligence%20intention&f=false
 . The Ahn Han & Luiz Moniz Pereira: Intention-based Decision Making via Intention Recognition and its Applications - http://centria.di.fct.unl.pt/~lmp/publications/online-papers/behavior_recognition.pdf
 . Linguística Geral: Saussure
-
+. Andrew Maas: Lexicon-Free Conversational Speech Recognition with Neural Networks - http://nlp.stanford.edu/pubs/maas15.pdf
 
 ----------------------------------
 
@@ -54,7 +54,13 @@ Todas essas diferentes etapas do funcionamento da Siri mostram quão importante 
 
 ***
 
+Como discutido acima, diferentes técnicas de IA são necessárias para um sistema como a Siri. Entretanto, no presente trabalho, serão mencionadas apenas algumas delas, que, embora não representem a totalidade do sistema, são suficientes para dar uma ideia de quais são os problemas envolvidos na construção de um sistema semelhante.
 
+Reconhecimento de Voz
+
+O primeiro desafio para um sistema como a Siri é interpretar o som gravado e gerar a partir dele um texto que representa o que foi dito. A área da IA que tem se preocupado em resolver problemas desse tipo é a área de Reconhecimento de Voz (Speech Recognition ou Speech-To-Text).
+
+A dificuldade de sistemas de reconhecimento de voz está relacionada, entre outras coisas, à qualidade do sinal sonoro em dois aspectos: em primeiro lugar, o sinal sonoro é poluído com ruídos do ambiente, de modo que os sons relevantes para o reconhecimento estão misturados em meio ao som de carros, ar condicionado, outras pessoas conversando, música, etc. Um outro aspecto em que a qualidade do sinal sonoro é um problema para o reconhecimento de voz é o fato de que em geral uma fala contém uma série de repetições, hesitações, palavras incompletas e palavras que não no léxico conhecido pelo sistema[citar Maas].
 
 
 
