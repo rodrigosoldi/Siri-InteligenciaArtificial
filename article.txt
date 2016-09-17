@@ -7,7 +7,7 @@ iv) Quais os principais êxitos e dificuldades encontradas no desenvolvimento do
 
 i) Uma assistente com interface de voz
 ii) Por que é necessário reconhecimento de voz, processamento de linguagem
-iii) Speech Recognition, Part of Speech tagging, Intent Resolution
+iii) Speech Recognition, Part of Speech tagging, Question Answering
 iv) êxitos? Dificuldades: Línguas sem corpora anotados (como o Português Brasileiro)
 
 ----------------------------------
@@ -68,8 +68,17 @@ Part of Speech Tagging
 
 Um outro nível de análise necessário para o funcionamento de um sistema de interface de voz como a Siri é a classificação de cada token em diferentes classes gramaticais, como verbo, pronome, substantivo (isso pressupõe uma análise prévia onde os diferentes tokens - contendo uma ou mais palavras, ou simplesmente um clítico, como "-me" em "respondeu-me" e "'s" em "John's car" - são identificados).
 
-Existem diferentes algoritmos para a classificação dos itens de uma sentença em classes gramaticais. Alguns sistemas utilizam um Modelo Oculto de Markov (HMM), em que as classes gramaticais de cada token de uma sentença S são definidas com base na probabilidade (i) de uma determinada palavra S(i) dada uma classe gramatical e (ii) na probabilidade de uma determinada classe gramatical na posição i dada a classe gramatical da posição i - 1. Esse método escolhe o conjunto de classes associadas aos tokens que resulta no produtório de maior probabilidade de i até n. Esse algoritmo pressupõe a existência de um corpus de treino que represente um modelo da língua, ou seja, que contenha as devidas probabilidades para cada palavra e classe gramatical. Um corpus assim não pode ser pequeno, uma vez que as probabilidades não estariam bem distribuídas. Além disso, existe sempre a chance de uma palavra no texto a ser analisado não estar presente no corpus, de modo que o sistema deva adotar algum outro critério para decidir que classe gramatical atribuir àquela palavra.
+Existem diferentes algoritmos para a classificação dos itens de uma sentença em classes gramaticais. Alguns sistemas utilizam um Modelo Oculto de Markov (HMM), em que as classes gramaticais de cada token de uma sentença S são definidas com base na probabilidade (i) de uma determinada palavra S(i) dada uma classe gramatical e (ii) na probabilidade de uma determinada classe gramatical na posição i dada a classe gramatical da posição i - 1. Esse método escolhe o conjunto de classes associadas aos tokens que resulta no produtório de maior probabilidade de i até n. Esse algoritmo pressupõe a existência de um corpus de treino que represente um modelo da língua, ou seja, que contenha as devidas probabilidades para cada palavra e classe gramatical. Um corpus assim não pode ser pequeno, uma vez que as probabilidades não estariam bem distribuídas. Além disso, existe sempre a chance de uma palavra no texto a ser analisado não estar presente no corpus, de modo que o sistema deva adotar algum outro critério para decidir que classe gramatical atribuir àquela palavra[citar J&M].
 
+Question Answering
+
+Uma das mais usadas funções da Siri é a resposta a perguntas simples, como "vai chover hoje?", "quem é o presidente dos Estados Unidos" ou "chegou algum e-mail do Professor Orlando?". A área da Inteligência Artificial que se ocupa de resolver problemas relacionados à resposta automática de perguntas feitas pelo usuário vem sendo chamada de "Question Answering"[citar J&M].
+
+Já na década de 1960 havia dois paradigmas principais para resolver esse problema: IR-based question answering (baseada em Information Retrieval) e knowledge-based question answering (baseada em conhecimento).
+
+Na primeira abordagem, deve haver uma vasta quantidade de documentos que são analisados e partes relevantes dos textos são selecionadas de acordo com o texto da pergunta. A pergunta é processada para que se determine qual deve ser o tipo de resposta e então é disparado um mecanismo de busca que retorna os documentos ranqueados e com as passagens relevantes destacadas. A seguir, cadeias de texto candidatas, retiradas das passagens, são ranqueadas e o sistema retorna a mais bem colocada.
+
+No segundo paradigma é preciso construir uma representação semântica da pergunta feita. Uma pergunta pode ser representada como uma proposição de Cálculo de Predicados ou uma simples relação entre uma entidade conhecida e uma não conhecida. Qualquer que seja a representação da pergunta, é necessário fazer uma busca em uma base de conhecimento para determinar a resposta.
 
 
 
